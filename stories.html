@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories</title>
+    <link rel="stylesheet" href="storiesstyle.css">
+</head>
+
+<body>
+
+     <div class="mainbody"> 
+
+        <div class="header">
+            <div class="header">
+                <a href="./homepage.html">Home</a>
+                <a class="active" href="./aboutpage.html">About Us</a>
+                <a href="./stories.html">Stories</a>
+                <a href="./resources.html">Resources</b>
+                <a href="./contactus.html">Contact us</a>
+            <div>
+        
+
+        <button class="accordion">Story 1</button>
+        <div class="story"> 
+            <p>this is my story: blablablablablablablablablablablablablablablabla
+                blablablablablablablablablablablablablablablablablablablablablablabla
+                blablablablabla blablablablablablablablablabla
+                blablablablablablablablablablablablablablablabla
+                blablablablablablablablablablablablablablablablablablablablablablabla
+                blablablablabla blablablablablablablablablabla
+                blablablablablablablablablablablablablablablabla
+                blablablablablablablablablablablablablablablablablablablablablablabla
+                blablablablabla blablablablablablablablablabla
+                blablablablablablablablablablablablablablablabla
+                blablablablablablablablablablablablablablablablablablablablablablabla
+                blablablablabla blablablablablablablablablabla
+                blablablablablablablablablablablablablablablabla
+                blablablablablablablablablablablablablablablablablablablablablablabla
+                blablablablabla blablablablablablablablablabla
+            </p>
+            <img src="theodore.jpeg" alt="profilepic">
+        </div>
+
+        <button class="accordion">Story 2</button>
+        <div class="story"> 
+            <p>this is my story: blablablablablablablablablablablablablablablabla
+                blablablablablablablablablablablablablablablablablablablablablablabla
+                blablablablabla.
+                blablablablablablablablablabla
+            </p>
+        </div>
+
+        <button class="accordion">Story 3</button>
+        <div class="story"> 
+            <p>this is my story: blablablablablablablablablablablablablablablabla
+                blablablablablablablablablablablablablablablablablablablablablablabla
+                blablablablabla.
+                blablablablablablablablablabla
+            </p>
+        </div>
+    </div>
+    <script>
+        let acc = document.getElementsByClassName("accordion");
+        let i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                let story = this.nextElementSibling;
+                    if (story.style.display === "block") {
+                        story.style.display = "none";
+                    } else {
+                    story.style.display = "block";
+                    }
+            });
+        }
+    </script>
+
+</body>
+</html>

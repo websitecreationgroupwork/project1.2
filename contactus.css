@@ -1,0 +1,123 @@
+.mainbody {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(1,1fr);
+  grid-row-gap: 10px;
+  background-color: #DCDCDC;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+}
+
+.header a:link{
+  text-decoration: none;
+}
+
+.header {
+  grid-row: 1 / 2;
+  grid-column: 1 / 4;
+  background-color: #466995;
+  border-bottom: 1px solid #466995;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  height: 80px;
+}
+
+.header a {
+  margin: 30px auto;
+  text-align: center;
+  position:relative;
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 120px;
+  height: 20px;
+}
+
+.header a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+  background-color: white;
+}
+
+.header a:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.header a.active {
+background-color:black;
+color: white;
+}
+
+.picture {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+  position:relative;
+  margin:auto;
+  width:750px;
+}
+
+.container{
+  grid-row: 1 / 1;
+  grid-column: 2 / 2;
+  width:500px;
+  padding: 20px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.form{
+  border-radius: 5px;
+  padding: 20px;
+}
+
+input[type=text], select, textarea{
+  transition-property:color;
+  transition-duration: 1.2s;
+  transition-delay: 0.5;
+  transition-timing-function: ease-out;
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+}
+
+.input:hover{
+  border-color:#466995;
+}
+
+textarea {
+  resize:none;
+  font-family: 'Oswald', sans-serif;
+}
+
+textarea:hover{
+  border-color:#466995;
+}
+
+input[type=submit]{
+  background-color:#466995;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+}
+
+input[type=submit]:hover {
+  background-color: #5d82af;
+}
